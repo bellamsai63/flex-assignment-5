@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGN-5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .parent{
+            width: 23vw;
+            height: 85vh;
+            border-radius: 10px;
+            box-shadow: 0px 0px 48px 23px rgba(0,0,0,0.1);
+        }
+        img{
+            height: 150px;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .child2{
+            margin-top: -10px;
+            height: 60vh;
+            text-align: center;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .child3{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 80%;
+            height: 70px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+        }
+        .annual{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        i{
+            color: grey;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            padding-top: 12px;
+            border-radius: 50%;
+            background-color: lightgray;
+        }
+        p{
+            width: 70%;
+        }
+        .button1{
+            height: 10%;
+            width: 70%;
+            font-size: 14px;
+            color: white;
+            background-color: rgb(31, 31, 185);
+            border-style: none;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .a1{
+            text-decoration: none;
+            color: gray;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        h3{
+            font-size: 18px;
+        }
+        a{
+            font-size: 14px;
+        }
+        .a1{
+            font-size: 14px;
+        }
+        @media screen and (min-width:600px) and (max-width:800px) {
+            .child3{
+                display: flex;
+                flex-flow: column wrap;
+                width: auto;
+                height: auto;
+            }
+            .button1{
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <img src="./images/order.webp" alt="">
+        </div>
+        <div class="child2">
+            <h1 style="color: rgb(31, 31, 185);">Order Summary</h1>
+            <p>You can now listen to millions of songs, audiobooks and broadcasts on any device anywhere you like! </p>
+            <div class="child3">
+                <i class="bi bi-music-note-beamed"></i>
+                <div class="annual">
+                    <h3>Annual Plan</h3>
+                    <span>$59.99/year</span>
+                </div>
+                <a href="#">Change</a>
+            </div>
+            <button class="button1">Proceed to payment</button>
+            <a class="a1" href="#">Cancel Order</a>
+        </div>
+    </div>
+</body>
+</html>
